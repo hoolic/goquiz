@@ -1,0 +1,111 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.holic.goquiz.textFrag">
+
+<!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="#ededed">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textQestion"
+        android:textAlignment="center"
+        android:textColor="#254457"
+        android:layout_marginTop="39dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:text="What flavour is cointreau ? "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textIsSelectable="false"
+        android:textSize="30dp"
+        android:allowUndo="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:typeface="serif" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textSubmit"
+        android:layout_alignLeft="@+id/textSubmit"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:id="@+id/text_radio_group">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:id="@+id/apple"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/simba"
+            android:layout_alignLeft="@+id/simba"
+            android:textSize="30dp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:id="@+id/orange"
+            android:layout_below="@+id/banana"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:textSize="30dp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana"
+            android:id="@+id/banana"
+            android:checked="false"
+            android:layout_below="@+id/orange"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="30dp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dragonfruit"
+            android:id="@+id/dragon"
+            android:checked="false"
+            android:layout_below="@+id/apple"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="30dp"
+            android:typeface="serif" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/textSubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="#335664"
+        android:textColor="#84cae8"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:typeface="serif" />
+
+</RelativeLayout>
+
+</FrameLayout>

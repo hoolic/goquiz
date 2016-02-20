@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.holic.goquiz.pictureFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ededed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Do you know him ?!"
+            android:id="@+id/picTitle"
+            android:textAlignment="center"
+            android:textColor="#2b4052"
+            android:phoneNumber="true"
+            android:textSize="40dp"
+            android:layout_above="@+id/answer"
+            android:layout_alignRight="@+id/pic"
+            android:layout_alignEnd="@+id/pic" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pic"
+
+            android:longClickable="true"
+            android:maxHeight="300dp"
+            android:maxWidth="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/picTitle"
+
+            android:layout_margin="25dp"
+            android:src="@drawable/elizabeth"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/picButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#2b415a"
+            android:layout_margin="10dp"
+            android:textColor="#9ad6eb" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:layout_above="@+id/picButton"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</FrameLayout>
